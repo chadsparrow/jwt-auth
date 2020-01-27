@@ -38,6 +38,16 @@ This demo backend uses:
       "token": <token>
     }
   ```
+  Token will include User information, Issued DateTime, and Expiration DateTime:
+  ```
+  {
+    "user": {
+      "email": "test@test.com"
+    },
+    "iat": 1580156278,
+    "exp": 1580159878
+  }
+  ```
 
 * `GET /protected`
 
