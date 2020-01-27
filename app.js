@@ -12,11 +12,12 @@ const helmet = require("helmet");
 const xss = require("xss-clean");
 const rateLimit = require("express-rate-limit");
 const hpp = require("hpp");
-const cors = require("cors");
+// const cors = require("cors"); // un-comment if cors is necessary
 
 app.use(helmet());
 app.use(xss());
 app.use(hpp());
+// app.use(cors()); // un-comment if cors is necessary
 
 // rate limiting 250 requests in 1 min
 const limiter = rateLimit({
