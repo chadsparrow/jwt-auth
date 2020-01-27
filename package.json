@@ -1,0 +1,42 @@
+{
+  "name": "jwt-auth",
+  "version": "1.0.0",
+  "description": "JSON Web Token Authorization & Verification",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadsparrow/jwt-auth.git"
+  },
+  "keywords": [
+    "node",
+    "jwt",
+    "authentication",
+    "verification"
+  ],
+  "author": "Chad Sparrow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chadsparrow/jwt-auth/issues"
+  },
+  "homepage": "https://github.com/chadsparrow/jwt-auth#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "express-rate-limit": "^5.0.0",
+    "helmet": "^3.21.2",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
