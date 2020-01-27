@@ -27,7 +27,7 @@ This demo backend uses:
 
 - `POST /login`
 
-  - REQUEST: must provide an valid email and password in json or form-urlencoded format
+  - REQUEST: must provide an valid email and password in json or form-urlencoded format (ie. email: test@test.com, password: testpassword)
 
   - successful response:
 
