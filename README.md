@@ -52,8 +52,7 @@ This demo backend uses:
     "success": true,
     "msg": "Welcome to the protected endpoint",
     "user": {
-        "email": "test@test.com",
-        "password": "testpassword"
+        "email": "test@test.com"
     },
     "exp": 1580157118
   }
