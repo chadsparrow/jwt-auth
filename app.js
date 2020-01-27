@@ -85,6 +85,7 @@ const verifyJWT = (req, res, next) => {
         .send({ success: false, msg: "Token expired, please login again" });
 
     req.user = decoded.user;
+    delete req.user.password;
     req.exp = decoded.exp;
     next();
   });
@@ -110,7 +111,11 @@ app.post("/login", (req, res) => {
 
   // JWT Signed async with user data and expires in 1 hour, callback passes token in response
   jwt.sign(
-    { user: tempUser },
+    {
+      user: {
+        email: tempUser.email
+      }
+    },
     process.env.JWT_PRIVATE_KEY,
     { expiresIn: "1h" },
     (err, token) => {
